@@ -44,7 +44,7 @@ export function SiteHeader() {
               key={n.to}
               to={n.to}
               end={n.end}
-              className={({ isActive }) =>
+              className={({ isActive }: { isActive: boolean }) =>
                 `text-sm font-medium transition-colors ${isActive ? "text-orange-brand" : "text-navy-deep/80 hover:text-orange-brand"}`
               }
             >
