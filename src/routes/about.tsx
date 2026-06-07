@@ -31,7 +31,7 @@ const highlights = [
 function AboutPage() {
   return (
     <>
-      <section className="bg-[var(--gradient-brand)] text-primary-foreground">
+      <section className="bg-gradient-brand text-primary-foreground">
         <div className="container-x py-20 md:py-28">
           <span className="text-xs uppercase tracking-[0.25em] text-orange-glow font-semibold">About us</span>
           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold max-w-3xl">
@@ -84,7 +84,7 @@ function AboutPage() {
         <div className="container-x grid gap-6 md:grid-cols-3">
           {values.map(({ icon: Icon, title, text }) => (
             <div key={title} className="rounded-2xl bg-card p-7 border border-border">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--gradient-accent)] text-navy-deep">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-accent text-navy-deep">
                 <Icon className="h-6 w-6" />
               </div>
               <h3 className="mt-4 font-bold text-navy-deep text-lg">{title}</h3>
@@ -95,10 +95,10 @@ function AboutPage() {
       </section>
 
       <section className="container-x py-20">
-        <div className="rounded-3xl bg-[var(--gradient-brand)] p-10 md:p-14 text-white text-center">
+        <div className="rounded-3xl bg-gradient-brand p-10 md:p-14 text-white text-center">
           <h2 className="text-3xl font-extrabold">Let's move your freight, together.</h2>
           <p className="mt-3 text-white/80">Reach out and we'll get back with a tailored plan.</p>
-          <Link to="/contact" className="mt-6 inline-flex items-center gap-2 rounded-md bg-[var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-navy-deep">
+          <Link to="/contact" className="mt-6 inline-flex items-center gap-2 rounded-md bg-gradient-accent px-6 py-3 text-sm font-semibold text-navy-deep">
             Contact Tanishk Logistics <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

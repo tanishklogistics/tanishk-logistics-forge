@@ -54,7 +54,7 @@ export function SiteHeader() {
 
         <a
           href="tel:+919825031792"
-          className="hidden md:inline-flex items-center gap-2 rounded-md bg-[var(--gradient-accent)] px-4 py-2 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)] hover:brightness-105 transition"
+          className="hidden md:inline-flex items-center gap-2 rounded-md bg-gradient-accent px-4 py-2 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)] hover:brightness-105 transition"
         >
           <Phone className="h-4 w-4" /> +91 98250 31792
         </a>
@@ -83,7 +83,7 @@ export function SiteHeader() {
             ))}
             <a
               href="tel:+919825031792"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--gradient-accent)] px-4 py-3 text-sm font-semibold text-navy-deep"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-accent px-4 py-3 text-sm font-semibold text-navy-deep"
             >
               <Phone className="h-4 w-4" /> Call +91 98250 31792
             </a>

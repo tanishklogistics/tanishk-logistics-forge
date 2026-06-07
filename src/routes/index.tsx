@@ -39,7 +39,7 @@ function HomePage() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img src={heroImg} alt="Container port at dusk" className="h-full w-full object-cover" width={1920} height={1080} />
-          <div className="absolute inset-0 bg-[var(--gradient-hero)]" />
+          <div className="absolute inset-0 bg-gradient-hero" />
         </div>
 
         <div className="container-x py-24 md:py-36 text-primary-foreground">
@@ -57,7 +57,7 @@ function HomePage() {
               operations across Gujarat and India.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-[var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)] hover:brightness-105 transition">
+              <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-gradient-accent px-6 py-3 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)] hover:brightness-105 transition">
                 Contact Us <ArrowRight className="h-4 w-4" />
               </Link>
               <Link to="/services" className="inline-flex items-center gap-2 rounded-md border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/10 transition">
@@ -101,7 +101,7 @@ function HomePage() {
           </Link>
         </div>
         <div className="relative">
-          <div className="aspect-square rounded-3xl bg-[var(--gradient-brand)] p-8 shadow-[var(--shadow-elegant)]">
+          <div className="aspect-square rounded-3xl bg-gradient-brand p-8 shadow-[var(--shadow-elegant)]">
             <div className="h-full w-full rounded-2xl bg-white/5 backdrop-blur border border-white/10 grid place-items-center">
               <div className="text-center text-white">
                 <Truck className="h-20 w-20 mx-auto text-orange-glow animate-truck" />
@@ -110,7 +110,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-          <div className="absolute -bottom-6 -left-6 rounded-xl bg-[var(--gradient-accent)] px-5 py-4 shadow-[var(--shadow-glow)] hidden md:block">
+          <div className="absolute -bottom-6 -left-6 rounded-xl bg-gradient-accent px-5 py-4 shadow-[var(--shadow-glow)] hidden md:block">
             <div className="font-display text-2xl font-extrabold text-navy-deep">Galpadar, Gujarat</div>
             <div className="text-xs text-navy-deep/80 uppercase tracking-widest">NH 8/A • Container corridor</div>
           </div>
@@ -179,7 +179,7 @@ function HomePage() {
 
       {/* CTA */}
       <section className="container-x pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-[var(--gradient-brand)] p-10 md:p-16 text-white shadow-[var(--shadow-elegant)]">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-brand p-10 md:p-16 text-white shadow-[var(--shadow-elegant)]">
           <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-orange-brand/20 blur-3xl" />
           <div className="relative max-w-2xl">
             <h2 className="text-3xl md:text-4xl font-extrabold">Need dependable transport &amp; container handling?</h2>
@@ -187,7 +187,7 @@ function HomePage() {
               Talk to our team about your freight requirements. We'll respond with a tailored coordination plan.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-[var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)]">
+              <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-gradient-accent px-6 py-3 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)]">
                 Get in touch <ArrowRight className="h-4 w-4" />
               </Link>
               <a href="tel:+919825031792" className="inline-flex items-center gap-2 rounded-md border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10">

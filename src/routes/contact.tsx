@@ -41,7 +41,7 @@ function ContactPage() {
 
   return (
     <>
-      <section className="bg-[var(--gradient-brand)] text-primary-foreground">
+      <section className="bg-gradient-brand text-primary-foreground">
         <div className="container-x py-20 md:py-24">
           <span className="text-xs uppercase tracking-[0.25em] text-orange-glow font-semibold">Contact</span>
           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold max-w-3xl">Let's coordinate your next shipment.</h1>
@@ -120,7 +120,7 @@ function ContactPage() {
 
             <button
               type="submit"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)] hover:brightness-105 transition"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-accent px-6 py-3 text-sm font-semibold text-navy-deep shadow-[var(--shadow-glow)] hover:brightness-105 transition"
             >
               Send via WhatsApp <Send className="h-4 w-4" />
             </button>
@@ -169,7 +169,7 @@ function InfoCard({
 }: { icon: typeof Phone; label: string; value: string; href?: string }) {
   const inner = (
     <div className="flex gap-4 rounded-xl border border-border bg-card p-5 hover:border-orange-brand/50 transition">
-      <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--gradient-brand)] text-white shrink-0">
+      <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-white shrink-0">
         <Icon className="h-5 w-5" />
       </div>
       <div>
