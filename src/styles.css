@@ -132,7 +132,6 @@
 }
 @utility bg-gradient-hero {
   background-image: var(--gradient-hero);
-  background-color: color-mix(in oklab, var(--navy-deep) 80%, transparent);
 }
 
 @keyframes fade-up {
