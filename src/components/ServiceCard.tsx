@@ -13,8 +13,8 @@ export function ServiceCard({
 }) {
   return (
     <div className="group relative rounded-2xl bg-card border border-border p-7 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)]">
-      <div className="absolute inset-x-0 top-0 h-1 rounded-t-2xl bg-[var(--gradient-accent)] opacity-80" />
-      <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--gradient-brand)] text-white shadow-[var(--shadow-elegant)]">
+      <div className="absolute inset-x-0 top-0 h-1 rounded-t-2xl bg-gradient-accent opacity-80" />
+      <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-brand text-white shadow-[var(--shadow-elegant)]">
         <Icon className="h-7 w-7" />
       </div>
       <h3 className="mt-5 text-xl font-bold text-navy-deep">{title}</h3>

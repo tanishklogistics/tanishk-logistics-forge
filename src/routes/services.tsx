@@ -17,7 +17,7 @@ export const Route = createFileRoute("/services")({
 function ServicesPage() {
   return (
     <>
-      <section className="bg-[var(--gradient-brand)] text-primary-foreground">
+      <section className="bg-gradient-brand text-primary-foreground">
         <div className="container-x py-20 md:py-28">
           <span className="text-xs uppercase tracking-[0.25em] text-orange-glow font-semibold">Our services</span>
           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold max-w-3xl">
@@ -94,10 +94,10 @@ function ServicesPage() {
       </section>
 
       <section className="container-x py-20">
-        <div className="rounded-3xl bg-[var(--gradient-brand)] p-10 md:p-14 text-white text-center">
+        <div className="rounded-3xl bg-gradient-brand p-10 md:p-14 text-white text-center">
           <h2 className="text-3xl font-extrabold">Ready to plan your next movement?</h2>
           <p className="mt-3 text-white/80">Share your requirement — we'll respond with a tailored coordination plan.</p>
-          <Link to="/contact" className="mt-6 inline-flex items-center gap-2 rounded-md bg-[var(--gradient-accent)] px-6 py-3 text-sm font-semibold text-navy-deep">
+          <Link to="/contact" className="mt-6 inline-flex items-center gap-2 rounded-md bg-gradient-accent px-6 py-3 text-sm font-semibold text-navy-deep">
             Get a quote <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

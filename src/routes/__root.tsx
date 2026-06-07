@@ -27,7 +27,7 @@ function NotFoundComponent() {
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-md bg-[var(--gradient-accent)] px-5 py-2.5 text-sm font-semibold text-navy-deep"
+            className="inline-flex items-center justify-center rounded-md bg-gradient-accent px-5 py-2.5 text-sm font-semibold text-navy-deep"
           >
             Go home
           </Link>

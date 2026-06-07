@@ -122,6 +122,18 @@
   color: transparent;
 }
 
+@utility bg-gradient-brand {
+  background-image: var(--gradient-brand);
+  background-color: var(--navy-deep);
+}
+@utility bg-gradient-accent {
+  background-image: var(--gradient-accent);
+  background-color: var(--orange-brand);
+}
+@utility bg-gradient-hero {
+  background-image: var(--gradient-hero);
+}
+
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
