@@ -1,14 +1,14 @@
-import { Link } from "@tanstack/react-router";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Logo } from "./Logo";
 
 const nav = [
-  { to: "/", label: "Home" },
+  { to: "/", label: "Home", end: true },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/contact", label: "Contact" },
-] as const;
+];
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,15 +40,16 @@ export function SiteHeader() {
 
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((n) => (
-            <Link
+            <NavLink
               key={n.to}
               to={n.to}
-              activeOptions={{ exact: n.to === "/" }}
-              className="text-sm font-medium text-navy-deep/80 hover:text-orange-brand transition-colors"
-              activeProps={{ className: "text-orange-brand" }}
+              end={n.end}
+              className={({ isActive }: { isActive: boolean }) =>
+                `text-sm font-medium transition-colors ${isActive ? "text-orange-brand" : "text-navy-deep/80 hover:text-orange-brand"}`
+              }
             >
               {n.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 

@@ -1,5 +1,5 @@
-import logo from "@/assets/tanishk-logo.png.asset.json";
+import logoUrl from "@/assets/tanishk-logo.png";
 
 export function Logo({ className = "h-10 w-auto" }: { className?: string }) {
-  return <img src={logo.url} alt="Tanishk Logistics" className={className} />;
+  return <img src={logoUrl} alt="Tanishk Logistics" className={className} />;
 }

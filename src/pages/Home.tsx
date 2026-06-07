@@ -1,20 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Package, Ship, ShieldCheck, Clock, Network, Wrench, Users } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import heroImg from "@/assets/hero-logistics.jpg";
 import { ServiceCard } from "@/components/ServiceCard";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Tanishk Logistics — Reliable Transport & Container Handling" },
-      { name: "description", content: "Professional transport contractor & commission agent services specializing in container handling across Gujarat, India." },
-      { property: "og:title", content: "Tanishk Logistics — Reliable Transport & Container Handling" },
-      { property: "og:description", content: "Trusted logistics partner for transport contracting, freight coordination and container operations." },
-      { property: "og:image", content: heroImg },
-    ],
-  }),
-  component: HomePage,
-});
 
 const stats = [
   { value: "15+", label: "Years of expertise" },
@@ -32,10 +20,17 @@ const whyUs = [
   { icon: Truck, title: "Heavy Transport Ready", desc: "Equipped to manage container-scale freight movement nationwide." },
 ];
 
-function HomePage() {
+export default function Home() {
   return (
     <>
-      {/* HERO */}
+      <Helmet>
+        <title>Tanishk Logistics — Reliable Transport & Container Handling</title>
+        <meta name="description" content="Professional transport contractor & commission agent services specializing in container handling across Gujarat, India." />
+        <meta property="og:title" content="Tanishk Logistics — Reliable Transport & Container Handling" />
+        <meta property="og:description" content="Trusted logistics partner for transport contracting, freight coordination and container operations." />
+        <meta property="og:image" content={heroImg} />
+      </Helmet>
+
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img src={heroImg} alt="Container port at dusk" className="h-full w-full object-cover" width={1920} height={1080} />
@@ -67,7 +62,6 @@ function HomePage() {
           </div>
         </div>
 
-        {/* stats strip */}
         <div className="relative border-t border-white/10 bg-navy-deep/80 backdrop-blur">
           <div className="container-x grid grid-cols-2 md:grid-cols-4 gap-6 py-8">
             {stats.map((s) => (
@@ -80,7 +74,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* ABOUT TEASER */}
       <section className="container-x py-20 md:py-28 grid gap-12 md:grid-cols-2 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-orange-brand font-semibold">About Tanishk Logistics</span>
@@ -117,7 +110,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* SERVICES */}
       <section className="bg-secondary/60 py-20 md:py-28">
         <div className="container-x">
           <div className="max-w-2xl">
@@ -158,7 +150,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
       <section className="container-x py-20 md:py-28">
         <div className="max-w-2xl">
           <span className="text-xs uppercase tracking-[0.25em] text-orange-brand font-semibold">Why choose us</span>
@@ -177,7 +168,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="container-x pb-24">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-brand p-10 md:p-16 text-white shadow-[var(--shadow-elegant)]">
           <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-orange-brand/20 blur-3xl" />

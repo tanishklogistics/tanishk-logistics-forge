@@ -1,17 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { CheckCircle2, Target, Eye, HeartHandshake, ArrowRight } from "lucide-react";
-
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Tanishk Logistics" },
-      { name: "description", content: "Tanishk Logistics is a Gujarat-based transport contractor and commission agent specializing in container handling and freight coordination." },
-      { property: "og:title", content: "About Tanishk Logistics" },
-      { property: "og:description", content: "Trusted transport contractor & commission agent — specialist in container handling." },
-    ],
-  }),
-  component: AboutPage,
-});
 
 const values = [
   { icon: Target, title: "Mission", text: "Deliver dependable, on-time transport and container handling services that empower our clients' operations." },
@@ -28,9 +17,16 @@ const highlights = [
   "Trusted by shippers, exporters and freight forwarders",
 ];
 
-function AboutPage() {
+export default function About() {
   return (
     <>
+      <Helmet>
+        <title>About — Tanishk Logistics</title>
+        <meta name="description" content="Tanishk Logistics is a Gujarat-based transport contractor and commission agent specializing in container handling and freight coordination." />
+        <meta property="og:title" content="About Tanishk Logistics" />
+        <meta property="og:description" content="Trusted transport contractor & commission agent — specialist in container handling." />
+      </Helmet>
+
       <section className="bg-gradient-brand text-primary-foreground">
         <div className="container-x py-20 md:py-28">
           <span className="text-xs uppercase tracking-[0.25em] text-orange-glow font-semibold">About us</span>

@@ -1,22 +1,18 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Truck, Package, Ship, ArrowRight } from "lucide-react";
 import { ServiceCard } from "@/components/ServiceCard";
 
-export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Services — Tanishk Logistics" },
-      { name: "description", content: "Transport contractor, commission agent and container handling services from Tanishk Logistics, Gujarat." },
-      { property: "og:title", content: "Services — Tanishk Logistics" },
-      { property: "og:description", content: "Truck & freight coordination, freight booking, container handling and yard operations." },
-    ],
-  }),
-  component: ServicesPage,
-});
-
-function ServicesPage() {
+export default function Services() {
   return (
     <>
+      <Helmet>
+        <title>Services — Tanishk Logistics</title>
+        <meta name="description" content="Transport contractor, commission agent and container handling services from Tanishk Logistics, Gujarat." />
+        <meta property="og:title" content="Services — Tanishk Logistics" />
+        <meta property="og:description" content="Truck & freight coordination, freight booking, container handling and yard operations." />
+      </Helmet>
+
       <section className="bg-gradient-brand text-primary-foreground">
         <div className="container-x py-20 md:py-28">
           <span className="text-xs uppercase tracking-[0.25em] text-orange-glow font-semibold">Our services</span>
